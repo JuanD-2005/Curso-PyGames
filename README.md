@@ -125,13 +125,25 @@ En estos módulos se desarrollan **proyectos completos**, aplicando todos los co
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/<usuario>/<repositorio>.git
-
+   git clone https://github.com/JuanD-2005/Curso-PyGames.git
+    ```
 2. Instala las dependencias:
-
+```bash
 pip install pygame
-
+ ```
 3. Accede a la carpeta de un módulo y ejecuta el ejemplo:
-
+```bash
 cd modulo_1
-python ejemplo_ventana.py
+ ```
+
+ Ejemplo:
+
+```bash
+python ejemplo_1.py
+```
+
+---
+
+## 📝 Licencia
+
+Este proyecto está licenciado bajo la licencia MIT.
