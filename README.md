@@ -5,7 +5,7 @@ Este repositorio contiene los **ejemplos, recursos y materiales de apoyo** del c
 
 ---
 
-## 🎯 Objetivo General
+## 🧨 Objetivo 
 
 Capacitar a los participantes para **crear videojuegos 2D sencillos en Python** utilizando **Pygame**, comprendiendo los fundamentos del desarrollo de juegos, la lógica de programación y las técnicas básicas de diseño y animación.
 
@@ -98,7 +98,7 @@ En estos módulos se desarrollan **proyectos completos**, aplicando todos los co
 - [Python 3.x](https://www.python.org/downloads/)
 - [Pygame](https://www.pygame.org/docs/)
 - (Opcional) [VS Code](https://code.visualstudio.com/) o cualquier IDE de tu preferencia.
-- (Material de Apoyo Canvas) [Canvas](https://www.canva.com/design/DAG0gQCoO9E/nP1jBo310gMT-tyol9EdoQ/edit?utm_content=DAG0gQCoO9E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- (Material de Apoyo Canvas) [Diapositivas del Curso](https://www.canva.com/design/DAG0gQCoO9E/nP1jBo310gMT-tyol9EdoQ/edit?utm_content=DAG0gQCoO9E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ---
 
@@ -117,12 +117,8 @@ En estos módulos se desarrollan **proyectos completos**, aplicando todos los co
     cd modulo_1
     ```
 
- Ejemplo:
-
-    ```bash
-    python ejemplo_1.py
-    ```
-
+ Ejemplo: python ejemplo_1.py
+    
 ---
 
 ## 📝 Licencia
