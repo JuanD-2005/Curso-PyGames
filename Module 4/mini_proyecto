@@ -1,0 +1,67 @@
+"""
+Mini Proyecto: "Salto Animado"
+
+Objetivo: combinar animación, movimiento y gravedad.
+El personaje camina animado y puede saltar.
+"""
+
+import pygame, os
+
+pygame.init()
+ventana = pygame.display.set_mode((640, 400))
+pygame.display.set_caption("Mini Proyecto — Salto Animado")
+clock = pygame.time.Clock()
+
+# Cargar animaciones
+frames = []
+for i in range(1, 5):
+    ruta = os.path.join("assets", f"jugador{i}.png")
+    frames.append(pygame.image.load(ruta).convert_alpha())
+
+# Variables
+frame_idx = 0
+jugador_rect = frames[0].get_rect(midbottom=(320, 360))
+vel_y = 0
+gravedad = 0.5
+en_suelo = True
+vel_x = 5
+
+# Bucle principal
+ejecutando = True
+while ejecutando:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            ejecutando = False
+
+    teclas = pygame.key.get_pressed()
+    if teclas[pygame.K_SPACE] and en_suelo:
+        vel_y = -10
+        en_suelo = False
+
+    if teclas[pygame.K_RIGHT]:
+        jugador_rect.x += vel_x
+        frame_idx += 0.2
+    elif teclas[pygame.K_LEFT]:
+        jugador_rect.x -= vel_x
+        frame_idx += 0.2
+    else:
+        frame_idx = 0
+
+    if frame_idx >= len(frames):
+        frame_idx = 0
+
+    # Aplicar gravedad
+    vel_y += gravedad
+    jugador_rect.y += vel_y
+
+    if jugador_rect.bottom >= 360:
+        jugador_rect.bottom = 360
+        vel_y = 0
+        en_suelo = True
+
+    ventana.fill((20, 20, 20))
+    ventana.blit(frames[int(frame_idx)], jugador_rect)
+    pygame.display.update()
+    clock.tick(60)
+
+pygame.quit()
