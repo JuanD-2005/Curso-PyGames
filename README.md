@@ -5,19 +5,6 @@ Este repositorio contiene los **ejemplos, recursos y materiales de apoyo** del c
 
 ---
 
-## 🧾 Información del Curso
-
-**Propuesta:** Programación orientada a juegos en 2D con Python  
-**Solicitantes:** Angel Vivas y Sebastián Ramírez  
-**Unidad Académica:** Departamento de Ingeniería Informática — UNET  
-**Modalidad:** Presencial  
-**Duración:** 4 semanas — 2 sesiones semanales (6 horas/semana, total 36 horas)  
-**Fechas:**  
-- Módulo 0–3: 26 de agosto – 02 de octubre  
-- Módulo 4–6: 06 de octubre – 14 de noviembre  
-
----
-
 ## 🎯 Objetivo General
 
 Capacitar a los participantes para **crear videojuegos 2D sencillos en Python** utilizando **Pygame**, comprendiendo los fundamentos del desarrollo de juegos, la lógica de programación y las técnicas básicas de diseño y animación.
@@ -29,13 +16,6 @@ Capacitar a los participantes para **crear videojuegos 2D sencillos en Python** 
 - Conocimientos básicos del uso de un computador personal (laptop o escritorio).  
 - Familiaridad con el uso de internet, navegadores web y gestor de archivos.  
 - (Opcional) Conocimientos básicos de programación o Python.
-
----
-
-## 💻 Recursos Requeridos
-
-- Laboratorio de computación con acceso a internet.  
-- Computadores personales con **Python 3.x** y **Pygame** instalados.
 
 ---
 
@@ -118,6 +98,7 @@ En estos módulos se desarrollan **proyectos completos**, aplicando todos los co
 - [Python 3.x](https://www.python.org/downloads/)
 - [Pygame](https://www.pygame.org/docs/)
 - (Opcional) [VS Code](https://code.visualstudio.com/) o cualquier IDE de tu preferencia.
+- (Material de Apoyo Canvas) [Canvas](https://www.canva.com/design/DAG0gQCoO9E/nP1jBo310gMT-tyol9EdoQ/edit?utm_content=DAG0gQCoO9E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ---
 
@@ -128,19 +109,19 @@ En estos módulos se desarrollan **proyectos completos**, aplicando todos los co
    git clone https://github.com/JuanD-2005/Curso-PyGames.git
     ```
 2. Instala las dependencias:
-```bash
-pip install pygame
- ```
+    ```bash
+    pip install pygame
+    ```
 3. Accede a la carpeta de un módulo y ejecuta el ejemplo:
-```bash
-cd modulo_1
- ```
+    ```bash
+    cd modulo_1
+    ```
 
  Ejemplo:
 
-```bash
-python ejemplo_1.py
-```
+    ```bash
+    python ejemplo_1.py
+    ```
 
 ---
 
