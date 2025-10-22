@@ -16,13 +16,15 @@ pygame.display.set_caption("Sistema de Coordenadas")
 
 # Dibujar puntos de referencia
 puntos = [
-    ((0, 0), "Origen (0,0)"),
-    ((550, 0), "Arriba derecha (600,0)"),
-    ((0, 350), "Abajo izquierda (0,400)"),
-    ((550, 350), "Abajo derecha (600,400)")
+    (0, 0),
+    (550, 0),
+    (0, 350),
+    (550, 350)
 ]
 
-fuente = pygame.font.Font(None, 26)
+# Cargar la imagen del jugador
+jugador = pygame.image.load("assets/Jugador.png")
+
 ejecutando = True
 
 while ejecutando:
@@ -32,11 +34,9 @@ while ejecutando:
 
     ventana.fill((200, 200, 220))
 
-    # Mostrar texto en las esquinas
-    for pos, texto in puntos:
-        pygame.draw.circle(ventana, (255, 0, 0), pos, 5)
-        etiqueta = fuente.render(texto, True, (0, 0, 0))
-        ventana.blit(etiqueta, (pos[0] + 10, pos[1] + 10))
+    # Dibujar la imagen en cada punto
+    for x, y in puntos:
+        ventana.blit(jugador, (x, y))
 
     pygame.display.flip()
 
