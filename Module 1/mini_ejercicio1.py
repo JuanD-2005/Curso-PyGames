@@ -28,7 +28,8 @@ pygame.display.set_caption("Mini ejercicio: fondo aleatorio")
 
 corriendo = True
 while corriendo:
-    ventana.fill = (random.randint(0, 10), 50, 50)
+    Red = random.randint(0, 10)
+    ventana.fill(Red , 50, 50)
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             corriendo = False
