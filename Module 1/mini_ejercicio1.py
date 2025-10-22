@@ -19,26 +19,16 @@ import pygame
 import random  # Para elegir colores aleatorios
 
 pygame.init()
+
+#Crear la ventana con el tamaño definido
 ventana = pygame.display.set_mode((800, 600))
+
+#Titulo de la ventana
 pygame.display.set_caption("Mini ejercicio: fondo aleatorio")
-
-# Lista de colores (RGB)
-colores = [
-    (0, 0, 0),       # Negro
-    (255, 0, 0),     # Rojo
-    (0, 255, 0),     # Verde
-    (0, 0, 255),     # Azul
-    (255, 255, 0),   # Amarillo
-    (255, 105, 180)  # Rosa
-]
-
-# Fondo inicial negro
-ventana.fill((0, 0, 0))
-pygame.display.update()
 
 corriendo = True
 while corriendo:
-    ventana.fill = (random.randint(0, 100), 50, 50)
+    ventana.fill = (random.randint(0, 10), 50, 50)
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             corriendo = False
