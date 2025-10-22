@@ -29,7 +29,7 @@ while ejecutando:
     ventana.fill((30, 30, 30))
 
     # Dibujar sprite en coordenadas (100,150)
-    ventana.blit(jugador_img, (100, 150))
+    ventana.blit(jugador_img, (100, 150), area=None, special_flags=0)
 
     # Actualizar pantalla
     pygame.display.update()
