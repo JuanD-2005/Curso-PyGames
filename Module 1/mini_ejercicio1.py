@@ -1,17 +1,16 @@
-#5. Mini ejercicio: Fondo cambiante y detección de teclas
+#5. Mini ejercicio: Fondo cambiante
 
 """
 🧩 Ejercicio:
 
 1. Crea una ventana de 800x600.
 2. Pinta el fondo de negro.
-3. Cada vez que el jugador presione una tecla, cambia el color del fondo al azar.
-4. Cierra la ventana al presionar la 'X'.
+3. Por cada interaccion del ciclo genera un cambio de color
+4. Cierra la ventana al presionar la 'X'en la ventana.
 
 Este ejercicio combina:
 - Creación de ventana
 - Bucle principal
-- Eventos de teclado
 - Cambio de color en pantalla
 """
 
