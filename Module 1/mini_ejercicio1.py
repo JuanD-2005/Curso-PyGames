@@ -38,15 +38,10 @@ pygame.display.update()
 
 corriendo = True
 while corriendo:
+    ventana.fill = (random.randint(0, 100), 50, 50)
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             corriendo = False
-        elif evento.type == pygame.KEYDOWN:
-            # Cambiar fondo al azar al presionar cualquier tecla
-            color = random.choice(colores)
-            ventana.fill(color)
-            pygame.display.update()
-            print("🎨 ¡Color de fondo cambiado!")
 
 pygame.quit()
 #---------------------------------------------------------------------------#
