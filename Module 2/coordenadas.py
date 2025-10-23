@@ -9,21 +9,26 @@ y el eje Y aumenta hacia abajo.
 """
 
 import pygame
+from pathlib import Path
 pygame.init()
 
-ventana = pygame.display.set_mode((600, 400))
+ventana = pygame.display.set_mode((600, 600))
 pygame.display.set_caption("Sistema de Coordenadas")
 
 # Dibujar puntos de referencia
 puntos = [
     (0, 0),
-    (550, 0),
+    (350, 0),
     (0, 350),
-    (550, 350)
+    (350, 350)
 ]
 
-# Cargar la imagen del jugador
-jugador = pygame.image.load("assets/Jugador.png")
+# Cargar la imagen del jugador (ruta relativa al archivo .py)
+base_dir = Path(__file__).resolve().parent
+jugador_path = base_dir / "assets" / "Jugador.png"
+
+jugador = pygame.image.load(str(jugador_path))
+
 
 ejecutando = True
 
