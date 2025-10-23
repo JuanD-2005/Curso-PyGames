@@ -29,15 +29,13 @@ jugador_path = base_dir / "assets" / "Jugador.png"
 
 jugador = pygame.image.load(str(jugador_path))
 
-
+ventana.fill((200, 200, 220))
 ejecutando = True
 
 while ejecutando:
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             ejecutando = False
-
-    ventana.fill((200, 200, 220))
 
     # Dibujar la imagen en cada punto
     for x, y in puntos:
