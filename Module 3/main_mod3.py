@@ -20,6 +20,7 @@ La música se mantiene en segundo plano
 
 import pygame
 import sys
+from pathlib import Path
 
 pygame.init()
 
@@ -37,8 +38,11 @@ jugador = pygame.Rect(100, 150, 50, 50)
 enemigo = pygame.Rect(400, 150, 50, 50)
 
 # Cargar sonidos
-sonido_golpe = pygame.mixer.Sound("golpe.wav")
-pygame.mixer.music.load("musica_fondo.mp3")
+BASE_DIR = Path(__file__).resolve().parent
+ASSETS_DIR = BASE_DIR / "assets"
+
+sonido_golpe = pygame.mixer.Sound(ASSETS_DIR / "golpe.wav")
+pygame.mixer.music.load(ASSETS_DIR / "musica_fondo.mp3")
 pygame.mixer.music.play(-1)
 
 # Variables

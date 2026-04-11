@@ -6,6 +6,8 @@ Pygame detecta las teclas presionadas con get_pressed()
 y maneja eventos del teclado, ratón o ventana.
 """
 
+from pathlib import Path
+
 import pygame
 pygame.init()
 
@@ -13,7 +15,8 @@ ventana = pygame.display.set_mode((600, 400))
 pygame.display.set_caption("Movimiento y Eventos Avanzados")
 
 # Cargar sprite
-jugador = pygame.image.load("assets/jugador.png").convert_alpha()
+base_dir = Path(__file__).resolve().parent
+jugador = pygame.image.load(base_dir / "assets" / "jugador.png").convert_alpha()
 jugador_rect = jugador.get_rect(center=(300, 200))
 
 velocidad = 5
