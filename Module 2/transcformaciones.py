@@ -9,13 +9,15 @@ Pygame incluye funciones para escalar, rotar y optimizar las imágenes:
 """
 
 import pygame
+from pathlib import Path
 pygame.init()
 
 ventana = pygame.display.set_mode((600, 400))
 pygame.display.set_caption("Transformaciones de Sprites")
 
 # Cargar y optimizar la imagen
-jugador_img = pygame.image.load("assets/jugador.png").convert_alpha()
+BASE_DIR = Path(__file__).resolve().parent
+jugador_img = pygame.image.load(BASE_DIR / "assets" / "jugador.png").convert_alpha()
 
 # Escalar a 64x64 píxeles
 jugador_peq = pygame.transform.scale(jugador_img, (64, 64))

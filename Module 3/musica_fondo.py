@@ -14,6 +14,7 @@ set_volume(valor): ajusta el volumen (de 0.0 a 1.0)
 
 import pygame
 import sys
+from pathlib import Path
 
 pygame.init()
 
@@ -21,7 +22,9 @@ pantalla = pygame.display.set_mode((400, 300))
 pygame.display.set_caption("Música de Fondo")
 
 # Cargar música y ajustar volumen
-pygame.mixer.music.load("musica_fondo.mp3")
+BASE_DIR = Path(__file__).resolve().parent
+ASSETS_DIR = BASE_DIR / "assets"
+pygame.mixer.music.load(ASSETS_DIR / "musica_fondo.mp3")
 pygame.mixer.music.set_volume(0.5)
 pygame.mixer.music.play(-1)  # Repetir infinitamente
 

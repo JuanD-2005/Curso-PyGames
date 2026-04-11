@@ -9,6 +9,7 @@ y se dibujan sobre la ventana con el método *blit()*.
 """
 
 import pygame
+from pathlib import Path
 pygame.init()
 
 # Crear ventana
@@ -16,7 +17,8 @@ ventana = pygame.display.set_mode((600, 400))
 pygame.display.set_caption("Sprites en Pygame")
 
 # Cargar imagen del jugador (desde la carpeta assets)
-jugador_img = pygame.image.load("assets/jugador.png").convert_alpha()
+BASE_DIR = Path(__file__).resolve().parent
+jugador_img = pygame.image.load(BASE_DIR / "assets" / "jugador.png").convert_alpha()
 
 # Bucle principal
 ejecutando = True

@@ -9,6 +9,7 @@ Luego los activamos con .play().
 
 import pygame
 import sys
+from pathlib import Path
 
 pygame.init()
 
@@ -17,7 +18,9 @@ pantalla = pygame.display.set_mode((400, 300))
 pygame.display.set_caption("Efectos de Sonido")
 
 # Cargar un sonido corto
-sonido_salto = pygame.mixer.Sound("salto.wav")
+BASE_DIR = Path(__file__).resolve().parent
+ASSETS_DIR = BASE_DIR / "assets"
+sonido_salto = pygame.mixer.Sound(ASSETS_DIR / "salto.wav")
 
 reloj = pygame.time.Clock()
 

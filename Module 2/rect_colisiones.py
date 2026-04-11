@@ -6,6 +6,8 @@ Con *get_rect()* obtenemos un rectángulo del mismo tamaño que la imagen.
 Podemos usar *colliderect()* para saber si dos objetos se tocan.
 """
 
+from pathlib import Path
+
 import pygame
 pygame.init()
 
@@ -13,8 +15,9 @@ ventana = pygame.display.set_mode((600, 400))
 pygame.display.set_caption("Colisiones con Rect")
 
 # Cargar imágenes optimizadas
-jugador_img = pygame.image.load("assets/jugador.png").convert_alpha()
-moneda_img = pygame.image.load("assets/moneda.png").convert_alpha()
+base_dir = Path(__file__).resolve().parent
+jugador_img = pygame.image.load(base_dir / "assets" / "jugador.png").convert_alpha()
+moneda_img = pygame.image.load(base_dir / "assets" / "moneda.png").convert_alpha()
 
 # Crear rectángulos
 jugador_rect = jugador_img.get_rect(topleft=(50, 150))
