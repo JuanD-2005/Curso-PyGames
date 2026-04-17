@@ -82,3 +82,74 @@ Creen un programa que use una variable vida(int), un while que reste 1 a la vida
 en cada turno y si la vida llega a 0 imprimir "Game Over"
 Extra: usar un for para mostrar los objetos de un inventario.
 """
+
+#---------------------------------------------------------------------------#
+
+#6. Reto Opcional (Modo Difícil) 🚀
+
+"""
+EL CALABOZO DE LA MUERTE:
+Para aquellos aventureros que terminaron rápido, aquí tienen un desafío mayor. 
+Van a simular la exploración de un calabozo utilizando todo lo que aprendimos.
+
+Instrucciones:
+1. Crea una variable 'vida' con 10 puntos.
+2. Crea la siguiente lista de habitaciones:
+   habitaciones = ["monstruo", "vacia", "pocion", "trampa", "salida", "monstruo"]
+3. Usa un bucle 'for' para recorrer cada habitación de la lista.
+4. Usa condicionales (if/elif) para evaluar qué hay en la habitación:
+   - Si es "monstruo", restas 3 de vida.
+   - Si es "trampa", restas 5 de vida.
+   - Si es "pocion", sumas 2 de vida y usas 'continue' para pasar a la 
+     siguiente habitación sin hacer nada más en ese turno.
+   - Si es "salida", imprimes "¡Escapaste con éxito!" y usas 'break' para 
+     terminar el juego.
+   - Si es "vacia", simplemente imprimes que no hay nada.
+5. Al final de cada vuelta del ciclo, verifica si la vida es menor o igual a 0. 
+   Si es así, imprime "Has muerto en el calabozo 💀" y usa 'break' para 
+   detener el ciclo.
+"""
+
+# --- ESPACIO PARA QUE EL ESTUDIANTE RESUELVA ---
+
+
+
+
+
+# --- SOLUCIÓN DEL RETO OPCIONAL (Ocultar o mostrar después) ---
+"""
+vida = 10
+habitaciones = ["monstruo", "vacia", "pocion", "trampa", "salida", "monstruo"]
+
+print("¡Entras al calabozo!")
+
+for habitacion in habitaciones:
+    print(f"\nEntras a una habitación que contiene: {habitacion}")
+    
+    # Manejo de la poción con continue
+    if habitacion == "pocion":
+        print("¡Te tomas la poción y recuperas 2 de vida!")
+        vida = vida + 2
+        print("Vida actual:", vida)
+        continue  # Salta el resto del código y va a la siguiente habitación
+        
+    # Manejo de los demás eventos
+    if habitacion == "monstruo":
+        print("¡El monstruo te ataca! Pierdes 3 de vida.")
+        vida = vida - 3
+    elif habitacion == "trampa":
+        print("¡Caíste en una trampa de pinchos! Pierdes 5 de vida.")
+        vida = vida - 5
+    elif habitacion == "salida":
+        print("¡Ves la luz del día! ¡Escapaste con éxito! 🏆")
+        break  # Termina el juego porque ya ganó
+    else:
+        print("La habitación está oscura y vacía.")
+        
+    # Verificación de muerte
+    if vida <= 0:
+        print("¡Te quedaste sin vida! Has muerto en el calabozo 💀")
+        break  # Termina el juego porque perdió
+        
+    print("Vida actual:", vida)
+"""
