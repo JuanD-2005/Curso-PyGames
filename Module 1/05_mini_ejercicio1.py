@@ -46,6 +46,8 @@ while corriendo:
     for evento in pygame.event.get():
         
         # ESCRIBE AQUÍ TU CÓDIGO:
+
+        
 pygame.quit()
 
 

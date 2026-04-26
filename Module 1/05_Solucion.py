@@ -22,7 +22,7 @@ while corriendo:
     # --- LÓGICA DE COLOR (Paso 2 del reto) ---
     # Aumentamos el azul gradualmente para crear el efecto de animación
     if contador_azul < 255:
-        contador_azul += 0.2  # Velocidad del cambio
+        print(contador_azul)
     else:
         contador_azul = 0      # Reinicio al llegar al máximo
     
@@ -43,6 +43,12 @@ while corriendo:
         elif evento.type == pygame.KEYDOWN:
             if evento.key == pygame.K_ESCAPE:
                 corriendo = False
+            elif evento.key == pygame.K_SPACE:
+                contador_azul += 25  # Sumamos una cantidad visible por cada toque
+
+                # Si nos pasamos de 255, reiniciamos el ciclo a 0
+                if contador_azul > 255:
+                    contador_azul = 0
 
 # 5. Cierre del programa
 pygame.quit()
