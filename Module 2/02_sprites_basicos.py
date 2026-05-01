@@ -1,50 +1,43 @@
-# 2. Sprites y Transformaciones: El Laboratorio de Imágenes
+# 2. Sprites Básicos: Atrápalos todos (desde tu disco duro)
 import pygame
 from pathlib import Path
 
 pygame.init()
-ventana = pygame.display.set_mode((800, 400))
-pygame.display.set_caption("🎨 Laboratorio de Sprites")
+ventana = pygame.display.set_mode((600, 400))
+pygame.display.set_caption("🖼️ Mostrando Sprites")
 
-# Configuración de rutas
-BASE_DIR = Path(__file__).resolve().parent
-# Cargamos y OPTIMIZAMOS (convert_alpha hace que el juego vaya más rápido)
-img_original = pygame.image.load(BASE_DIR / "assets" / "jugador.png").convert_alpha()
-
-# =====================================================================
-# 🧑‍💻 TU RETO 1: El Espejo Deformante
-# Alguien intentó escalar al personaje pero lo dejó muy flaco.
-# Instrucciones: Arregla las dimensiones para que sea un cuadrado de 100x100.
-# =====================================================================
-jugador_arreglado = pygame.transform.scale(img_original, (20, 100)) # ❌ ¡Arréglame!
+# 1. EL GPS DEL ARCHIVO
+# base_dir encuentra la carpeta exacta donde está guardado este código
+base_dir = Path(__file__).resolve().parent
 
 # =====================================================================
-# 🧑‍💻 TU RETO 2: Gimnasia para Sprites
-# Usa transform.rotate() para que el personaje esté cabeza abajo.
-# Pista: Los ángulos se miden en grados (90, 180, 270...).
+# 🧑‍💻 TU RETO 1: Carga la imagen en la memoria
+# Usa pygame.image.load() y dale la ruta uniendo base_dir con "assets" y "jugador.png".
+# ¡No olvides poner .convert_alpha() al final para optimizar el juego!
 # =====================================================================
-jugador_loco = pygame.transform.rotate(img_original, 0) # ❌ Pon el ángulo correcto
 
-# Bucle principal
+# ESCRIBE AQUÍ TU CÓDIGO (Reemplaza el None):
+jugador_img = None 
+
+
 corriendo = True
 while corriendo:
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             corriendo = False
 
-    ventana.fill((40, 40, 40)) # Fondo oscuro
+    ventana.fill((30, 30, 30)) # Fondo oscuro
 
-    # Dibujamos las 3 versiones para comparar
-    ventana.blit(img_original, (50, 150))      # Original
-    ventana.blit(jugador_arreglado, (300, 150)) # El que deben arreglar
-    ventana.blit(jugador_loco, (550, 150))      # El que deben rotar
+    # =====================================================================
+    # 🧑‍💻 TU RETO 2: Dibuja al personaje en la pantalla
+    # Usa ventana.blit(imagen, (X, Y)) para mostrar a 'jugador_img' 
+    # en las coordenadas (100, 150).
+    # =====================================================================
+    
+    # ESCRIBE AQUÍ TU CÓDIGO:
+    
+    
 
-    pygame.display.flip()
+    pygame.display.update()
 
 pygame.quit()
-
-"""
-💡 MISIONES PARA EXPERTOS:
-1. Crea un 'jugador_gigante' usando un factor de escala (multiplicando el tamaño original).
-2. ¿Qué pasa si rotas la imagen 45 grados? ¿Se ve igual de nítida?
-"""

@@ -1,26 +1,27 @@
-# 3. Rectángulos y Colisiones: La Caja Invisible
+# 3. Transformaciones: El Laboratorio de Imágenes
 import pygame
 from pathlib import Path
 
 pygame.init()
-ventana = pygame.display.set_mode((600, 400))
-pygame.display.set_caption("💥 Detector de Choques")
+ventana = pygame.display.set_mode((800, 400))
+pygame.display.set_caption("🎨 Laboratorio de Sprites")
 
-# 1. Cargamos las imágenes
-base_dir = Path(__file__).resolve().parent
-jugador_img = pygame.image.load(base_dir / "assets" / "jugador.png").convert_alpha()
-moneda_img = pygame.image.load(base_dir / "assets" / "moneda.png").convert_alpha()
-
-# 2. Creamos las "cajas invisibles" (Rects)
-# Usamos top-left (arriba izquierda) para el jugador y center para la moneda
-jugador_rect = jugador_img.get_rect(topleft=(50, 150))
+BASE_DIR = Path(__file__).resolve().parent
+img_original = pygame.image.load(BASE_DIR / "assets" / "jugador.png").convert_alpha()
 
 # =====================================================================
-# 🧑‍💻 TU RETO 1: Crea la caja de la moneda
-# Usa .get_rect(center=(X, Y)) para poner la moneda en el medio de la pantalla (300, 200).
+# 🧑‍💻 TU RETO 1: El Espejo Deformante
+# Alguien intentó escalar al personaje pero lo dejó muy flaco (20 de ancho).
+# Instrucciones: Arregla las dimensiones para que sea un cuadrado de 100x100.
 # =====================================================================
-moneda_rect = None # ❌ Reemplaza 'None' con tu código
+jugador_arreglado = pygame.transform.scale(img_original, (20, 100)) # ❌ ¡Arréglame!
 
+# =====================================================================
+# 🧑‍💻 TU RETO 2: Gimnasia para Sprites
+# Usa pygame.transform.rotate() para que el personaje esté cabeza abajo.
+# Pista: Los ángulos se miden en grados (90, 180, 270...).
+# =====================================================================
+jugador_loco = pygame.transform.rotate(img_original, 0) # ❌ Pon el ángulo correcto
 
 corriendo = True
 while corriendo:
@@ -28,34 +29,19 @@ while corriendo:
         if evento.type == pygame.QUIT:
             corriendo = False
 
-    ventana.fill((25, 25, 25))
+    ventana.fill((40, 40, 40)) 
 
-    # Dibujamos las imágenes usando sus Rects en lugar de coordenadas manuales
-    ventana.blit(jugador_img, jugador_rect)
-    
-    if moneda_rect is not None:
-        ventana.blit(moneda_img, moneda_rect)
-
-        # =====================================================================
-        # 🧑‍💻 TU RETO 2: ¡El choque!
-        # Usa jugador_rect.colliderect(moneda_rect) para saber si se tocan.
-        # =====================================================================
-        
-        # ESCRIBE TU CONDICIONAL (if) AQUÍ:
-        # Si chocan:
-        #   1. Imprime "¡Moneda recogida!" en la consola.
-        #   2. "Esconde" la moneda moviendo su x a -100 (fuera de la pantalla).
-        
-        
-        # =====================================================================
+    # Dibujamos las 3 versiones para comparar
+    ventana.blit(img_original, (50, 150))       # Original
+    ventana.blit(jugador_arreglado, (300, 150)) # El que deben arreglar
+    ventana.blit(jugador_loco, (550, 150))      # El que deben rotar
 
     pygame.display.flip()
 
 pygame.quit()
 
 """
-💡 MISION EXTRA:
-Añade un print() dentro de tu bucle 'while' que imprima las coordenadas 
-del jugador: print(jugador_rect.x, jugador_rect.y). 
-¿Ves cómo el Rect guarda la información de la posición?
+💡 MISIONES PARA EXPERTOS:
+1. Crea un 'jugador_gigante' usando transform.scale, pero ponle de tamaño (200, 200).
+   Luego, dibújalo en la pantalla usando ventana.blit().
 """
