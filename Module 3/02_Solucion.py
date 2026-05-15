@@ -7,8 +7,8 @@ pygame.init()
 pantalla = pygame.display.set_mode((400, 300))
 pygame.display.set_caption("🔊 Efectos de Sonido - RESUELTO")
 
-BASE_DIR = Path(__file__).resolve().parent[cite: 23]
-ASSETS_DIR = BASE_DIR / "assets"[cite: 23]
+BASE_DIR = Path(__file__).resolve().parent
+ASSETS_DIR = BASE_DIR / "assets"
 
 # --- RETO 1: Carga el sonido en la memoria (RESUELTO) ---
 BASE_DIR = Path(__file__).resolve().parent

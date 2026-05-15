@@ -9,7 +9,7 @@ pygame.display.set_caption("🖼️ Mostrando Sprites - RESUELTO")
 base_dir = Path(__file__).resolve().parent
 
 # --- RETO 1: Carga la imagen (RESUELTO) ---
-jugador_img = pygame.image.load(base_dir / "assets" / "jugador.png").convert_alpha()
+jugador_img = pygame.image.load(base_dir / "assets" / "jugador.png")
 
 corriendo = True
 while corriendo:

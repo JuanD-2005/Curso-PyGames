@@ -10,7 +10,7 @@ AZUL = (50, 100, 255)
 ROJO = (255, 50, 50)
 VERDE = (0, 255, 0)
 
-# Creamos dos rectángulos invisibles (x, y, ancho, alto)[cite: 26]
+# Creamos dos rectángulos invisibles (x, y, ancho, alto)
 jugador = pygame.Rect(100, 150, 50, 50)
 enemigo = pygame.Rect(300, 150, 50, 50)
 

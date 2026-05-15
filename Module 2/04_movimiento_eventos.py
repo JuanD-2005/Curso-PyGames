@@ -13,7 +13,7 @@ jugador = pygame.image.load(base_dir / "assets" / "jugador.png").convert_alpha()
 # Variables manuales para la posición del jugador
 jugador_x = 300
 jugador_y = 200
-velocidad = 5 #
+velocidad = 50 #
 
 # El reloj controla a qué velocidad corre nuestro juego (FPS)
 reloj = pygame.time.Clock() #

@@ -29,7 +29,7 @@ while corriendo:
     
     # 2. Descomenta la línea de abajo (quítale el #) y lleva a este jugador
     # a la esquina SUPERIOR DERECHA. (Pista: el ancho máximo es 600)
-    # ventana.blit(jugador, (0, 0)) 
+    ventana.blit(jugador, (0, 0)) 
     
     # 3. Lleva a este jugador a la esquina INFERIOR IZQUIERDA.
     # ventana.blit(jugador, (0, 0))

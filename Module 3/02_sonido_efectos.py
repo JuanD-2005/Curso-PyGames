@@ -30,6 +30,7 @@ while True:
         if evento.type == pygame.KEYDOWN:
             if evento.key == pygame.K_SPACE:
                 
+                
                 # =====================================================================
                 # 🧑‍💻 TU RETO 2: ¡Haz que suene!
                 # Usa el método .play() en tu variable 'sonido_salto'

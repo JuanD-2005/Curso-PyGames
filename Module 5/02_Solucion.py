@@ -1,25 +1,14 @@
-"""
-La física en los juegos permite simular movimiento natural.
-Una de las fuerzas más comunes es la **gravedad**, que acelera los objetos hacia abajo.
-
-Para simularla:
-- Usamos una variable de velocidad vertical (vel_y)
-- Sumamos gravedad cada frame
-- Limitamos la posición con el “suelo”
-"""
-
+# 2. Física de Plataformas: Gravedad y Saltos - VERSIÓN RESUELTA
 import pygame
 
 pygame.init()
 ventana = pygame.display.set_mode((600, 400))
-pygame.display.set_caption("Gravedad y salto")
+pygame.display.set_caption("⬆️ Saltos y Gravedad - RESUELTO")
 clock = pygame.time.Clock()
 
-# Jugador (rectángulo simple)
 jugador = pygame.Rect(280, 300, 40, 40)
 color = (0, 200, 255)
 
-# Variables físicas
 vel_y = 0
 gravedad = 0.5
 en_suelo = True
@@ -32,12 +21,12 @@ while ejecutando:
 
     teclas = pygame.key.get_pressed()
 
-    # Salto
+    # --- RETO 1 (RESUELTO) ---
     if teclas[pygame.K_SPACE] and en_suelo:
         vel_y = -10
         en_suelo = False
 
-    # Aplicar gravedad
+    # --- RETO 2 (RESUELTO) ---
     vel_y += gravedad
     jugador.y += vel_y
 

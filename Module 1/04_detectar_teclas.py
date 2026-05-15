@@ -22,7 +22,7 @@ while corriendo:
             # Un virus invirtió las flechas Arriba y Abajo. 
             # Lee el código, encuentra el error y arréglalo para que tengan sentido.
             # =====================================================================
-            if evento.key == pygame.K_DOWN:
+            if evento.key == pygame.K_s:
                 print("⬆️ Volando hacia ARRIBA")
             elif evento.key == pygame.K_UP:
                 print("⬇️ Cayendo hacia ABAJO")
