@@ -21,7 +21,7 @@ jugador_arreglado = pygame.transform.scale(img_original, (20, 100)) # ❌ ¡Arr�
 # Usa pygame.transform.rotate() para que el personaje esté cabeza abajo.
 # Pista: Los ángulos se miden en grados (90, 180, 270...).
 # =====================================================================
-jugador_loco = pygame.transform.rotate(img_original, 0) # ❌ Pon el ángulo correcto
+jugador_loco = pygame.transform.rotate(img_original, 360) # ❌ Pon el ángulo correcto
 
 corriendo = True
 while corriendo:

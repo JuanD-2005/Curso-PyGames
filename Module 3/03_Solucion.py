@@ -7,8 +7,8 @@ pygame.init()
 pantalla = pygame.display.set_mode((400, 300))
 pygame.display.set_caption("🎶 Música de Fondo - RESUELTO")
 
-BASE_DIR = Path(__file__).resolve().parent[cite: 24]
-ASSETS_DIR = BASE_DIR / "assets"[cite: 24]
+BASE_DIR = Path(__file__).resolve().parent
+ASSETS_DIR = BASE_DIR / "assets"
 
 # --- RETO 1: El DJ del juego (RESUELTO) ---
 BASE_DIR = Path(__file__).resolve().parent

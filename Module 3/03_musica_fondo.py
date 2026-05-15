@@ -18,7 +18,11 @@ ASSETS_DIR = BASE_DIR / "assets"
 # =====================================================================
 
 # ESCRIBE AQUÍ TUS 3 LÍNEAS DE CÓDIGO:
-
+BASE_DIR = Path(__file__).resolve().parent
+ASSETS_DIR = BASE_DIR / "assets"
+pygame.mixer.music.load(str(ASSETS_DIR / "musica_fondo.mp3"))
+pygame.mixer.music.set_volume(0.5)
+pygame.mixer.music.play(-1)
 
 
 reloj = pygame.time.Clock()
