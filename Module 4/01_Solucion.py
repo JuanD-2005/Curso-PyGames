@@ -6,7 +6,7 @@ pantalla = pygame.display.set_mode((500, 300))
 pygame.display.set_caption("🔤 Mostrar texto en pantalla")
 
 # PASO 1: Elegir la fuente y el tamaño (None usa la fuente por defecto de Pygame)
-fuente = pygame.font.Font(None, 100) 
+fuente = pygame.font.SysFont("Calibri", 100) 
 
 # =====================================================================
 # 🧑‍💻 TU RETO 1: Crea el "cartel" de texto

@@ -21,7 +21,7 @@ while ejecutando:
 
     teclas = pygame.key.get_pressed()
 
-    # --- RETO 1 (RESUELTO) ---
+    # --- RETO  1 (RESUELTO) ---
     if teclas[pygame.K_SPACE] and en_suelo:
         vel_y = -10
         en_suelo = False
