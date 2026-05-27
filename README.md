@@ -1,9 +1,11 @@
 <!-- README mejorado: presentación del curso y guía rápida -->
 # 🎮 Programación Orientada a Juegos 2D con Python (Curso)
 
-Repositorio con ejemplos, ejercicios y plantillas del curso "Programación orientada a juegos en 2D con Python". Los materiales están organizados por módulos para un aprendizaje progresivo: fundamentos de Python, uso de Pygame, manejo de sprites, físicas, sonido y proyectos finales.
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org)
+[![Pygame](https://img.shields.io/badge/Pygame-2.x-orange.svg)](https://www.pygame.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Estado:** Materiales organizados y listos para uso didáctico.
+Repositorio con ejemplos, ejercicios y plantillas del curso "Programación orientada a juegos en 2D con Python". Los materiales están organizados por módulos para un aprendizaje progresivo: fundamentos de Python, uso de Pygame, manejo de sprites, físicas, sonido y proyectos finales.
 
 ---
 
@@ -16,25 +18,11 @@ Repositorio con ejemplos, ejercicios y plantillas del curso "Programación orien
 
 ---
 
-## Índice
-
-1. Introducción
-2. Requisitos
-3. Instalación rápida
-4. Estructura del repositorio
-5. Ejecutar ejemplos
-6. Buenas prácticas
-7. Contribuir
-8. Créditos y licencia
-9. Contacto
-
----
-
-## 1) Introducción
+## Introducción
 
 Este repositorio agrupa los materiales del curso por módulos. Cada módulo incluye scripts, ejercicios y soluciones comentadas para facilitar el aprendizaje desde lo básico hasta proyectos aplicados.
 
-## 2) Requisitos
+## Requisitos
 
 - Python 3.9 o superior (3.10/3.11 recomendado).
 - Pygame (2.x recomendado).
@@ -42,7 +30,7 @@ Este repositorio agrupa los materiales del curso por módulos. Cada módulo incl
 
 Se recomienda trabajar con un entorno virtual para mantener dependencias aisladas.
 
-## 3) Instalación rápida
+## Instalación rápida
 
 ```bash
 git clone https://github.com/JuanD-2005/Curso-PyGames.git
@@ -59,9 +47,7 @@ source venv/bin/activate
 pip install pygame
 ```
 
-También puedes crear `requirements.txt` con `pygame` y usar `pip install -r requirements.txt`.
-
-## 4) Estructura del repositorio
+## Estructura del repositorio
 
 - `Module 0/` — Fundamentos de Python (variables, condicionales, funciones, ciclos).
 - `Module 1/` — Fundamentos de Pygame (ventana, color, entrada de teclado).
@@ -73,41 +59,38 @@ También puedes crear `requirements.txt` con `pygame` y usar `pip install -r req
 
 Cada módulo incluye ejemplos (`*.py`), soluciones y, cuando aplica, una carpeta `assets/` con imágenes y sonidos.
 
-## 5) Ejecutar ejemplos
+## Ejecutar ejemplos
 
-1. Abre una terminal y sitúate en la carpeta del módulo deseado:
+- Abre una terminal y sitúate en la carpeta del módulo deseado, por ejemplo:
 
 ```bash
 cd "Module 1"
 python 01_concepto_basico.py
 ```
 
-2. Si un ejemplo usa recursos (imágenes/sonidos), ejecuta desde la carpeta que contiene `assets/` para que las rutas relativas funcionen.
+- Si un ejemplo usa recursos (imágenes/sonidos), ejecuta desde la carpeta que contiene `assets/` para que las rutas relativas funcionen.
 
-## 6) Buenas prácticas
+## Buenas prácticas
 
 - Mantén un entorno virtual para instalar dependencias.
 - Ejecuta los scripts desde la carpeta del módulo para evitar errores de ruta.
 - Revisa los archivos `*_Solucion.py` para ver implementaciones y comentarios útiles.
 
-## 7) Contribuir
+## Contribuir
 
 Si quieres proponer mejoras o añadir contenido:
 
-1. Haz fork del repositorio.
-2. Crea una rama con tus cambios: `git checkout -b mejora/<tema>`.
-3. Envía un pull request describiendo los cambios.
+- Haz fork del repositorio.
+- Crea una rama con tus cambios: `git checkout -b mejora/<tema>`.
+- Envía un pull request describiendo los cambios.
 
 Se agradecen correcciones de código, mejoras en documentación y nuevos ejemplos didácticos.
 
-## 8) Créditos y licencia
+## Créditos y licencia
 
 Material preparado por el equipo del curso. Licencia: MIT.
 
-## 9) Contacto
+## Contacto
 
 Para consultas o soporte, abre un issue en el repositorio.
 
----
-
-¿Quieres que además añada un `requirements.txt`, un archivo `CONTRIBUTING.md` o badges para el repositorio? Puedo generarlos ahora.
