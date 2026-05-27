@@ -1,126 +1,113 @@
-# 🎮 Programación Orientada a Juegos en 2D con Python
+<!-- README mejorado: presentación del curso y guía rápida -->
+# 🎮 Programación Orientada a Juegos 2D con Python (Curso)
 
-Este repositorio contiene los **ejemplos, recursos y materiales de apoyo** del curso  
-**“Programación orientada a juegos en 2D con Python”**, utilizando la biblioteca **Pygame**.
+Repositorio con ejemplos, ejercicios y plantillas del curso "Programación orientada a juegos en 2D con Python". Los materiales están organizados por módulos para un aprendizaje progresivo: fundamentos de Python, uso de Pygame, manejo de sprites, físicas, sonido y proyectos finales.
 
----
-
-## 🧨 Objetivo 
-
-Capacitar a los participantes para **crear videojuegos 2D sencillos en Python** utilizando **Pygame**, comprendiendo los fundamentos del desarrollo de juegos, la lógica de programación y las técnicas básicas de diseño y animación.
+**Estado:** Materiales organizados y listos para uso didáctico.
 
 ---
 
-## ⚙️ Requisitos
+## Contenido rápido
 
-- Conocimientos básicos del uso de un computador personal (laptop o escritorio).  
-- Familiaridad con el uso de internet, navegadores web y gestor de archivos.  
-- (Opcional) Conocimientos básicos de programación o Python.
-
----
-
-## 🧩 Estructura del Curso y Ejemplos
-
-Cada módulo tiene su carpeta correspondiente en este repositorio (`modulo_0`, `modulo_1`, etc.), con ejemplos y ejercicios prácticos.
-
-### **Módulo 0 — Introducción a Python**
-- Variables y tipos de datos  
-- Ciclos (`for`, `while`)  
-- Condicionales (`if`, `else`, `elif`)  
-- Funciones y estructuras básicas  
-
-📁 Carpeta: `modulo_0/`
+- **Objetivo:** Enseñar a crear videojuegos 2D con Python y Pygame.
+- **Público objetivo:** Estudiantes y autodidactas interesados en desarrollo de juegos.
+- **Requisitos:** Python 3.9+ y Pygame 2.x.
+- **Ejecutar ejemplos:** `python <archivo.py>` desde la carpeta del módulo.
 
 ---
 
-### **Módulo 1 — ¿Qué es Pygame?**
-- Instalación y configuración de la librería  
-- Creación e inicialización de una ventana de juego  
-- Bucle principal del juego (Game Loop)  
-- Manejo de eventos (cierre de ventana, actualización de pantalla)
+## Índice
 
-📁 Carpeta: `modulo_1/`
-
----
-
-### **Módulo 2 — Sprites, Movimiento y Eventos**
-- Manejo de imágenes (sprites)  
-- Sistema de coordenadas (origen en esquina superior izquierda)  
-- Movimiento básico y manejo avanzado de eventos  
-
-📁 Carpeta: `modulo_2/`
+1. Introducción
+2. Requisitos
+3. Instalación rápida
+4. Estructura del repositorio
+5. Ejecutar ejemplos
+6. Buenas prácticas
+7. Contribuir
+8. Créditos y licencia
+9. Contacto
 
 ---
 
-### **Módulo 3 — Colisiones y Sonido**
-- Detección de colisiones entre objetos  
-- Carga y reproducción de efectos de sonido (`pygame.mixer.Sound`)  
-- Música de fondo (`pygame.mixer.music`)  
-- Control de volumen  
+## 1) Introducción
 
-📁 Carpeta: `modulo_3/`
+Este repositorio agrupa los materiales del curso por módulos. Cada módulo incluye scripts, ejercicios y soluciones comentadas para facilitar el aprendizaje desde lo básico hasta proyectos aplicados.
+
+## 2) Requisitos
+
+- Python 3.9 o superior (3.10/3.11 recomendado).
+- Pygame (2.x recomendado).
+- Sistema operativo: Windows / macOS / Linux.
+
+Se recomienda trabajar con un entorno virtual para mantener dependencias aisladas.
+
+## 3) Instalación rápida
+
+```bash
+git clone https://github.com/JuanD-2005/Curso-PyGames.git
+cd "Curso PyGames"
+
+# (opcional) crear y activar entorno virtual
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# macOS / Linux
+source venv/bin/activate
+
+# instalar pygame
+pip install pygame
+```
+
+También puedes crear `requirements.txt` con `pygame` y usar `pip install -r requirements.txt`.
+
+## 4) Estructura del repositorio
+
+- `Module 0/` — Fundamentos de Python (variables, condicionales, funciones, ciclos).
+- `Module 1/` — Fundamentos de Pygame (ventana, color, entrada de teclado).
+- `Module 2/` — Sprites, transformaciones y eventos.
+- `Module 3/` — Colisiones y sonido.
+- `Module 4/` — Texto, UI, puntuación y menús.
+- `Module 5/` — Animación y física básica.
+- `Module 6/` — Proyectos finales y plantillas (Asteroides, Come y Crece, Mecanografía, Plataformas, Simón Dice).
+
+Cada módulo incluye ejemplos (`*.py`), soluciones y, cuando aplica, una carpeta `assets/` con imágenes y sonidos.
+
+## 5) Ejecutar ejemplos
+
+1. Abre una terminal y sitúate en la carpeta del módulo deseado:
+
+```bash
+cd "Module 1"
+python 01_concepto_basico.py
+```
+
+2. Si un ejemplo usa recursos (imágenes/sonidos), ejecuta desde la carpeta que contiene `assets/` para que las rutas relativas funcionen.
+
+## 6) Buenas prácticas
+
+- Mantén un entorno virtual para instalar dependencias.
+- Ejecuta los scripts desde la carpeta del módulo para evitar errores de ruta.
+- Revisa los archivos `*_Solucion.py` para ver implementaciones y comentarios útiles.
+
+## 7) Contribuir
+
+Si quieres proponer mejoras o añadir contenido:
+
+1. Haz fork del repositorio.
+2. Crea una rama con tus cambios: `git checkout -b mejora/<tema>`.
+3. Envía un pull request describiendo los cambios.
+
+Se agradecen correcciones de código, mejoras en documentación y nuevos ejemplos didácticos.
+
+## 8) Créditos y licencia
+
+Material preparado por el equipo del curso. Licencia: MIT.
+
+## 9) Contacto
+
+Para consultas o soporte, abre un issue en el repositorio.
 
 ---
 
-### **Módulo 4 — Texto, Puntuación y Elementos de Interfaz**
-- Mostrar texto en pantalla  
-- Implementación de elementos de interfaz (UI)  
-- Barra de vida y puntuación  
-- Creación de menús sencillos (inicio, pausa, game over)
-
-📁 Carpeta: `modulo_4/`
-
----
-
-### **Módulo 5 y 6 — Creando tu Primer Juego Sencillo**
-En estos módulos se desarrollan **proyectos completos**, aplicando todos los conceptos aprendidos.
-
-**Ejemplos de juegos:**
-- 🧱 *Juego de esquivar obstáculos:* el jugador evita objetos que caen.  
-- 💰 *Juego de recoger monedas:* el jugador suma puntos al recoger ítems.  
-
-**Pasos principales:**
-1. Planificación del juego (diseño, reglas, personajes).  
-2. Configuración inicial (ventana, bucle principal).  
-3. Movimiento del jugador y sprites.  
-4. Creación de obstáculos/enemigos.  
-5. Detección de colisiones.  
-6. Interfaz: puntuación y vida.  
-7. Sonido y música.  
-8. Condiciones de fin del juego (ganar/perder).  
-
-📁 Carpeta: `modulo_5_6/`
-
----
-
-## 🧰 Tecnologías y Librerías
-
-- [Python 3.x](https://www.python.org/downloads/)
-- [Pygame](https://www.pygame.org/docs/)
-- (Opcional) [VS Code](https://code.visualstudio.com/) o cualquier IDE de tu preferencia.
-- (Material de Apoyo Canvas) [Diapositivas del Curso](https://www.canva.com/design/DAG0gQCoO9E/nP1jBo310gMT-tyol9EdoQ/edit?utm_content=DAG0gQCoO9E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-
----
-
-## 🚀 Cómo Ejecutar los Ejemplos
-
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/JuanD-2005/Curso-PyGames.git
-    ```
-2. Instala las dependencias:
-    ```bash
-    pip install pygame
-    ```
-3. Accede a la carpeta de un módulo y ejecuta el ejemplo:
-    ```bash
-    cd modulo_1
-    ```
-
- Ejemplo: python ejemplo_1.py
-    
----
-
-## 📝 Licencia
-
-Este proyecto está licenciado bajo la licencia MIT.
+¿Quieres que además añada un `requirements.txt`, un archivo `CONTRIBUTING.md` o badges para el repositorio? Puedo generarlos ahora.
