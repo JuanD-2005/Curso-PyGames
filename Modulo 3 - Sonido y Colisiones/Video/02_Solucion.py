@@ -8,11 +8,11 @@ pantalla = pygame.display.set_mode((400, 300))
 pygame.display.set_caption("🔊 Efectos de Sonido - RESUELTO")
 
 BASE_DIR = Path(__file__).resolve().parent
-ASSETS_DIR = BASE_DIR / "assets"
+ASSETS_DIR = BASE_DIR.parent / "assets"
 
 # --- RETO 1: Carga el sonido en la memoria (RESUELTO) ---
 BASE_DIR = Path(__file__).resolve().parent
-ASSETS_DIR = BASE_DIR / "assets"
+ASSETS_DIR = BASE_DIR.parent / "assets"
 sonido_salto = pygame.mixer.Sound(str(ASSETS_DIR / "salto.wav"))
 
 reloj = pygame.time.Clock()

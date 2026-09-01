@@ -1,5 +1,8 @@
 # 05_solucion_reto_final.py - VERSIÓN RESUELTA
 # Este archivo integra: Ventana, Sistema RGB, Lógica de Ciclos y Eventos.
+# ENFOQUE B: Animación CONTROLADA POR TECLA — el azul NO sube solo; solo
+# avanza cuando el jugador presiona ESPACIO. Compara con 05_Solucion_A.py
+# (animación continua).
 
 import pygame
 
@@ -20,12 +23,10 @@ corriendo = True
 while corriendo:
     
     # --- LÓGICA DE COLOR (Paso 2 del reto) ---
-    # Aumentamos el azul gradualmente para crear el efecto de animación
-    if contador_azul < 255:
-        print(contador_azul)
-    else:
-        contador_azul = 0      # Reinicio al llegar al máximo
-    
+    # Aquí NO incrementamos nada solos: en este enfoque el azul solo avanza
+    # cuando el jugador presiona ESPACIO (ver manejo de eventos más abajo,
+    # donde también se reinicia el contador al pasarse de 255).
+
     # --- DIBUJO (Paso 3 del reto) ---
     # Usamos 50 de Rojo y Verde para un tono oscuro, y el contador para el Azul
     ventana.fill((50, 50, contador_azul))

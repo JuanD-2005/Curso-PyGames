@@ -1,0 +1,9 @@
+{
+    "editor.codeLensFontSize": 18,
+    "editor.codeLensFontFamily": "monospace",
+    "editor.minimap.enabled": false,
+    "workbench.colorCustomizations": {
+        "editorCodeLens.foreground": "#00FF00"
+    },
+    "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python"
+}

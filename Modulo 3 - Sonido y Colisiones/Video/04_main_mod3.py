@@ -13,7 +13,7 @@ jugador = pygame.Rect(100, 150, 50, 50)
 enemigo = pygame.Rect(400, 150, 50, 50)
 
 BASE_DIR = Path(__file__).resolve().parent
-ASSETS_DIR = BASE_DIR / "assets"
+ASSETS_DIR = BASE_DIR.parent / "assets"
 
 # =====================================================================
 # 🧑‍💻 PASO 1: Prepara el audio

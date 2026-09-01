@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent
 # --- ✂️ LAS TIJERAS VIRTUALES DE PYGAME ✂️ ---
 
 # 1. Cargamos la imagen completa (asegúrate de que el nombre del archivo sea correcto)
-ruta_hoja = BASE_DIR / "assets" / "tu_sprite_sheet.png" 
+ruta_hoja = BASE_DIR.parent / "assets" / "tu_sprite_sheet.png" 
 hoja_completa = pygame.image.load(ruta_hoja).convert_alpha()
 
 # 2. Las medidas exactas de un solo personaje (matemática: 1280 / 10)
