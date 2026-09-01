@@ -1,4 +1,6 @@
 # 5. RETO JEFE: El Fondo Camaleónico
+# ENFOQUE A: Animación CONTINUA — el azul sube solo, cuadro a cuadro, sin
+# esperar ninguna tecla. Compara con 05_Solucion_B.py (control por tecla).
 import pygame
 
 pygame.init()

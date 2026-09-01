@@ -8,7 +8,7 @@ pantalla = pygame.display.set_mode((400, 300))
 pygame.display.set_caption("🎶 Música de Fondo")
 
 BASE_DIR = Path(__file__).resolve().parent
-ASSETS_DIR = BASE_DIR / "assets"
+ASSETS_DIR = BASE_DIR.parent / "assets"
 
 # =====================================================================
 # 🧑‍💻 TU RETO 1: El DJ del juego
@@ -19,7 +19,7 @@ ASSETS_DIR = BASE_DIR / "assets"
 
 # ESCRIBE AQUÍ TUS 3 LÍNEAS DE CÓDIGO:
 BASE_DIR = Path(__file__).resolve().parent
-ASSETS_DIR = BASE_DIR / "assets"
+ASSETS_DIR = BASE_DIR.parent / "assets"
 pygame.mixer.music.load(str(ASSETS_DIR / "musica_fondo.mp3"))
 pygame.mixer.music.set_volume(0.5)
 pygame.mixer.music.play(-1)
