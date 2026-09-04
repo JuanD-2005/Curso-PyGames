@@ -131,6 +131,14 @@ print(f"Fuera de la funcion, la espada hace: {daño_espada}")
 # --- ESPACIO PARA QUE EL ESTUDIANTE RESUELVA ---
 
 
+# %% 🧠 PARA REPASAR
+#
+# 1. ¿Qué devuelve una función que no tiene return? ¿Por qué eso no es
+#    un error?
+# 2. ¿Por qué una variable creada DENTRO de una función no existe fuera
+#    de ella?
+
+
 #---------------------------------------------------------------------------#
 # 📝 PAUSA - IR A MOODLE
 #---------------------------------------------------------------------------#

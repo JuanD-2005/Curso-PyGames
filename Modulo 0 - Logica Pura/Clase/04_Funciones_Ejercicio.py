@@ -70,6 +70,14 @@
 # se reciben esos dos valores.)
 
 
+# %% 🧠 PARA REPASAR
+#
+# 1. ¿Por qué la función mejorar_arma() necesita un return en TODAS sus
+#    ramas (if/elif/else), incluida la del material rechazado?
+# 2. Si llamas a la función pero no guardas lo que devuelve (sin el
+#    signo =), ¿qué le pasa al daño de la espada?
+
+
 #---------------------------------------------------------------------------#
 # 📝 PAUSA - IR A MOODLE
 #---------------------------------------------------------------------------#

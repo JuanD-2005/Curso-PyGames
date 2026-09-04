@@ -132,6 +132,13 @@ print("Fin de la exploracion.")
 # --- ESPACIO PARA QUE EL ESTUDIANTE RESUELVA ---
 
 
+# %% 🧠 PARA REPASAR
+#
+# 1. ¿Qué diferencia hay entre range(0, 20, 3) y range(20, 0, 3)? ¿Por
+#    qué uno de los dos no imprime nada?
+# 2. ¿Cuál es la diferencia real entre break y continue dentro de un for?
+
+
 #---------------------------------------------------------------------------#
 # 📝 PAUSA - IR A MOODLE
 #
