@@ -65,6 +65,14 @@
 # menos de 2 = "Cobarde").
 
 
+# %% 🧠 PARA REPASAR
+#
+# 1. En el reto, ¿por qué la revisión de "¿ya se murió?" debe ir DESPUÉS
+#    de restar el daño, no antes?
+# 2. ¿Cuál es la diferencia entre usar 'continue' para la poción y
+#    'break' para la salida?
+
+
 #---------------------------------------------------------------------------#
 # 📝 PAUSA - IR A MOODLE
 #---------------------------------------------------------------------------#

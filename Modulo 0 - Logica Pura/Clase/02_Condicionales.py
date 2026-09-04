@@ -119,6 +119,14 @@ else:
 # --- ESPACIO PARA QUE EL ESTUDIANTE RESUELVA ---
 
 
+# %% 🧠 PARA REPASAR
+#
+# 1. ¿Cuál es la diferencia entre = y ==? ¿Por qué Python te avisa con
+#    SyntaxError si usas mal el primero dentro de un if?
+# 2. Si cambias el orden de un if/elif/else, ¿puede cambiar el resultado
+#    aunque las condiciones sean las mismas? ¿Por qué?
+
+
 #---------------------------------------------------------------------------#
 # 📝 PAUSA - IR A MOODLE
 #

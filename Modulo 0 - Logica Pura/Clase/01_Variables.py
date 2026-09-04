@@ -117,6 +117,14 @@ print(f"\nObjetos totales: {len(inventario)}")
 # --- ESPACIO PARA QUE EL ESTUDIANTE RESUELVA ---
 
 
+# %% 🧠 PARA REPASAR
+#
+# 1. ¿Por qué Python no marcó ningún error cuando pusiste vida = -80?
+#    ¿Qué significa que "no truene" no sea lo mismo que "esté bien"?
+# 2. ¿Qué error te da restar un número a lo que devuelve input()? ¿Cómo
+#    se soluciona?
+
+
 #---------------------------------------------------------------------------#
 # 📝 PAUSA - IR A MOODLE
 #
