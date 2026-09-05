@@ -115,6 +115,8 @@ while ejecutando:
     vel_y += gravedad
     jugador.y += vel_y
 
+
+
     if jugador.bottom >= 380:
         jugador.bottom = 380
         vel_y = 0

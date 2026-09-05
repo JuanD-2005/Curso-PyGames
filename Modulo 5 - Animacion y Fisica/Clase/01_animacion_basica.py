@@ -149,7 +149,7 @@ while ejecutando:
             ejecutando = False
 
     ventana.fill((30, 30, 30))
-    ventana.blit(frames[frame_actual], (236, 136))
+    ventana.blit(frames[int(frame_actual)], (236, 136))
 
     frame_actual += 0.15
     if frame_actual >= len(frames):
