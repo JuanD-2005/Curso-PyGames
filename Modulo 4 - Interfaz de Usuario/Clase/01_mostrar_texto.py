@@ -44,7 +44,7 @@ pygame.init()
 pantalla = pygame.display.set_mode((500, 300))
 pygame.display.set_caption("🔤 Mostrar texto en pantalla")
 
-fuente = pygame.font.Font(None, 48)
+fuente = pygame.font.Font(None, 55)
 texto_imagen = fuente.render("¡Hola, Pygame!", True, (200, 0, 0))
 
 ejecutando = True
