@@ -181,17 +181,15 @@ while ejecutando:
             # Revisa si el jugador está cayendo (su velocidad es mayor a 0) 
             # Y si su rectángulo choca con la plataforma.
             
-            # if jugador_vy >= 0 and jugador_rect.colliderect(...):
+            if False: # PISTA: jugador_vy >= 0 and jugador_rect.colliderect(plat_rect)
                 # Detenemos la caída y lo ponemos en el suelo
                 
                 # jugador_rect.bottom = plat_rect.top  # Lo colocamos justo encima
-                # jugador_y = ...                      # Actualizamos la posición Y
-                # jugador_vy = ...                     # Frenamos su velocidad vertical a 0
-                # EN_SUELO = ...                       # Confirmamos que está en el suelo
+                # jugador_y = jugador_rect.y           # Actualizamos la posición Y
+                # jugador_vy = 0                       # Frenamos su velocidad vertical a 0
+                # EN_SUELO = True                      # Confirmamos que está en el suelo
                 
-                # break   # Rompemos el ciclo (solo toca una plataforma a la vez)
-                
-            pass # Borra este pass cuando quites los comentarios de arriba
+                break   # Rompemos el ciclo (solo toca una plataforma a la vez)
 
         # Buffer de salto
         if salto_solicitado and EN_SUELO:

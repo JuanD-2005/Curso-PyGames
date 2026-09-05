@@ -212,16 +212,17 @@ while ejecutando:
         # TODO 5: IMPACTO DE BALA EN ASTEROIDE
         # ==========================================
         for d in disparos[:]:
+            bala_rect = pygame.Rect(d["x"] - 3, d["y"] - 3, 6, 6)
             for ast in asteroides[:]:
-                distancia = math.hypot(d["x"] - ast["x"], d["y"] - ast["y"])
-                if distancia < ast["radio"]:
+                ast_rect = pygame.Rect(ast["x"] - ast["radio"], ast["y"] - ast["radio"], ast["radio"] * 2, ast["radio"] * 2)
+                
+                # Revisa si la bala choca con el asteroide
+                if False: # PISTA: bala_rect.colliderect(ast_rect)
                     # La bala chocó. Debes borrar la bala (d) de la lista 'disparos',
                     # el asteroide (ast) de la lista 'asteroides', y sumar 1 al 'puntaje'.
                     
-                    # if d in disparos:
-                    #    ...
-                    # if ast in asteroides:
-                    #    ...
+                    # disparos.remove(d)
+                    # asteroides.remove(ast)
                     # puntaje += 1
                     
                     if sonido_explosion: sonido_explosion.play()
@@ -232,11 +233,13 @@ while ejecutando:
         # ==========================================
         if not invulnerable:
             nave_rect = pygame.Rect(nave_x - NAVE_TAM, nave_y - NAVE_TAM, NAVE_TAM * 2, NAVE_TAM * 2)
-            for ast in asteroides:
+            for ast in asteroides[:]:
                 ast_rect = pygame.Rect(ast["x"] - ast["radio"], ast["y"] - ast["radio"], ast["radio"] * 2, ast["radio"] * 2)
-                if nave_rect.colliderect(ast_rect):
+                
+                # Revisa si la nave choca con el asteroide
+                if False: # PISTA: nave_rect.colliderect(ast_rect)
                     # ¡Choque! Resta 1 a las vidas.
-                    # vidas -= ...
+                    # vidas -= 1
                     
                     invulnerable = True
                     tiempo_invulnerable = pygame.time.get_ticks()
@@ -245,7 +248,7 @@ while ejecutando:
                     
                     # Si las vidas llegan a 0 o menos, cambia el estado a "fin"
                     # if vidas <= 0:
-                    #    estado = ...
+                    #    estado = "fin"
                     break
 
         if invulnerable and pygame.time.get_ticks() - tiempo_invulnerable > DURACION_INVULNERABILIDAD:
