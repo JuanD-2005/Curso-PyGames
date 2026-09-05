@@ -167,27 +167,25 @@ while ejecutando:
                 enemigos.remove(enemigo)
                 continue
 
-            # Calcular distancia entre el jugador y el enemigo
-            dx = jugador_x - enemigo["x"]
-            dy = jugador_y - enemigo["y"]
-            distancia = math.hypot(dx, dy)
-            limite = jugador_radio + enemigo["radio"]
+            # Generamos los Rect para las colisiones 
+            jugador_rect = pygame.Rect(jugador_x - jugador_radio, jugador_y - jugador_radio, jugador_radio * 2, jugador_radio * 2)
+            enemigo_rect = pygame.Rect(enemigo["x"] - enemigo["radio"], enemigo["y"] - enemigo["radio"], enemigo["radio"] * 2, enemigo["radio"] * 2)
 
             # ==========================================
             # TODO 4: COLISIONES (¿Te lo comes o te come?)
             # ==========================================
-            # Revisa si los dos círculos se están tocando
-            if False: # PISTA: Cambia 'False' por: distancia < limite
+            # Revisa si los dos círculos (ahora Rectángulos) se están tocando
+            if False: # PISTA: Cambia 'False' por: jugador_rect.colliderect(enemigo_rect)
             
                 # ¿Eres más grande o igual que el enemigo?
                 if jugador_radio >= enemigo["radio"]:
                     
                     # 1. ¡Te lo comes! Borra al enemigo de la lista 'enemigos'
-                    # enemigos.remove(...)
+                    # enemigos.remove(enemigo)
                     
                     # 2. ¡Creces! Suma un poco del tamaño del enemigo a tu 'jugador_radio'
                     crecimiento = int(enemigo["radio"] * 0.3)
-                    # jugador_radio += ...
+                    # jugador_radio += crecimiento
                     
                     # Asegurarnos de no pasar el tamaño máximo
                     jugador_radio = min(JUGADOR_RADIO_MAX, jugador_radio)
@@ -207,7 +205,7 @@ while ejecutando:
                     # El enemigo es más grande ¡DAÑO!
                     if not invulnerable:
                         # 3. Resta 1 a tus vidas
-                        # vidas -= ...
+                        # vidas -= 1
                         
                         invulnerable = True
                         tiempo_invulnerable = pygame.time.get_ticks()
